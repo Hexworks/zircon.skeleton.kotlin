@@ -1,45 +1,24 @@
 group "com.example.zircon.skeleton"
-version "0.0.1"
+version "1.0.0"
 
 buildscript {
-    ext.kotlinVersion = "1.3.10"
-	repositories {
-		mavenLocal()
-		jcenter()
-		mavenCentral()
-		maven { url "https://plugins.gradle.org/m2/" }
-	}
-	dependencies {
-		classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    repositories {
+        mavenLocal()
+        jcenter()
+        mavenCentral()
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "com.github.jengelman.gradle.plugins:shadow:4.0.2"
-	}
-}
-
-ext {
-	zirconVersion = "2018.5.27-PREVIEW"
-	junitVersion = "4.12"
-	mockitoVersion = "1.10.19"
-	assertjVersion = "3.6.2"
-	slf4jVersion = "1.7.25"
-
-	libraries = [
-            kotlin_stdlib   : "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion",
-            kotlin_reflect  : "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion",
-            slf4j_api       : "org.slf4j:slf4j-api:$slf4jVersion",
-			slf4j_simple    : "org.slf4j:slf4j-simple:$slf4jVersion",
-			zircon_core_jvm : "org.hexworks.zircon:zircon.core-jvm:$zirconVersion",
-			zircon_jvm_swing: "org.hexworks.zircon:zircon.jvm.swing:$zirconVersion",
-			junit           : "junit:junit:$junitVersion",
-			mockito         : "org.mockito:mockito-all:$mockitoVersion",
-			assertj         : "org.assertj:assertj-core:$assertjVersion"
-	]
+    }
 }
 
 repositories {
-	mavenLocal()
-	mavenCentral()
-	jcenter()
-	maven { url 'https://jitpack.io' }
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    maven { url 'https://jitpack.io' }
 }
 
 apply plugin: 'kotlin'
@@ -69,18 +48,18 @@ jar {
 build.dependsOn(shadowJar)
 
 dependencies {
-    compile libraries.kotlin_stdlib
-    compile libraries.kotlin_reflect
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 
-    compile libraries.slf4j_api
-    compile libraries.slf4j_simple
+    implementation "org.slf4j:slf4j-api:$slf4j_version"
+    implementation "org.slf4j:slf4j-simple:$slf4j_version"
 
-    compile libraries.zircon_core_jvm
-    compile libraries.zircon_jvm_swing
+    implementation "org.hexworks.zircon:zircon.core-jvm:$zircon_version"
+    implementation "org.hexworks.zircon:zircon.jvm.swing:$zircon_version"
 
-    testCompile libraries.junit
-    testCompile libraries.mockito
-    testCompile libraries.assertj
+    testImplementation "junit:junit:$junit_version"
+    testImplementation "org.mockito:mockito-all:$mockito_version"
+    testImplementation "org.assertj:assertj-core:$assertj_version"
 }
 
 tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {

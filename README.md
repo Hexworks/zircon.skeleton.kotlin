@@ -94,3 +94,7 @@ You'll be presented by a new window with a greeting:
   docs of [AssertJ](http://joel-costigliola.github.io/assertj/)
 - If nothing helps or if you think that there is a bug in this project feel free to open
   a new issue [here](https://github.com/Hexworks/zircon.skeleton.kotlin/issues/new).
+
+## Credits
+
+The "tetris" tileset was contributed by [CO](https://github.com/EdgeWasherMcgee/Tetris) (Thanks!)
