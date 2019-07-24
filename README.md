@@ -27,7 +27,7 @@ In order to set up a local dev environment on your computer you need to follow t
 If you want to use Git to clone the project you need to navigate to a folder where you want
 to check the project out in a terminal and type the following command:
 ```bash
-git clone https://github.com/Hexworks/zircon.skeleton.kotiln.git
+git clone https://github.com/Hexworks/zircon.skeleton.kotlin.git
 ```
 Alternatively you can just download and extract the latest release form the [Releases page](https://github.com/Hexworks/zircon.skeleton.kotlin/releases).
 
