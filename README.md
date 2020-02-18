@@ -73,7 +73,7 @@ Running this command will create an artifact in the `build/libs` directory which
 class so you can run your project right away by typing this command:
 
 ```bash
-java -jar build/libs/zircon.skeleton.kotlin-0.0.1.jar
+java -jar build/libs/zircon.skeleton.kotlin-1.0.1.jar
 ```
 
 You'll be presented by a new window with a greeting:
@@ -85,7 +85,7 @@ You'll be presented by a new window with a greeting:
 ## Development resources
 
 - To get started with Zircon you can check the Zircon Project Page on our website [here](https://hexworks.org/projects/zircon/)
-- If you get stuck with Zircon feel free to come up to our [Discord channel](https://discordapp.com/invite/PE3qFmF)
+- If you get stuck with Zircon feel free to come up to our [Discord channel](https://discordapp.com/invite/vSNgvBh)
   where you can ask us and other Zircon users
 - The [Roguelikedev Subreddit](https://www.reddit.com/r/roguelikedev/) is also a good source of
   information
