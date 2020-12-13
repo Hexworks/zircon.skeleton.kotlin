@@ -8,7 +8,7 @@ val assertj_version: String by project
 
 plugins {
     kotlin("jvm") version "1.4.10"
-    id("com.github.johnrengelman.shadow") version "4.0.4"
+    id("com.github.johnrengelman.shadow") version "5.2.0"
 }
 
 repositories {
