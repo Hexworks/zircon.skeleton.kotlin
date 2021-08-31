@@ -1,10 +1,10 @@
 # Zircon Kotlin Skeleton Project
 
-This is a skeleton project for Zircon users which can be used to get started with Zircon.
+This is a skeleton project for Zircon users that can be used to get started with Zircon.
 
 ## Getting started
 
-This project works on all platforms but there are some prerequisites which must be installed
+This project works on all platforms but there are some prerequisites that must be installed
 before you can start coding.
 
 1. *Git.* (optional)
@@ -13,7 +13,7 @@ before you can start coding.
     on your system if you want to clone / fork this project. You can get it [here](https://git-scm.com/).
     Alternatively you can download the zip / tarball from the [Releases page](https://github.com/Hexworks/zircon.skeleton.kotlin/releases).
 2. *Java*
-    This project uses Kotlin so you must install a Java *JDK* to get started. We suggest [OpenJDK](https://openjdk.java.net/install/)
+    This project uses Kotlin, so you must install a Java *JDK* to get started. We suggest [OpenJDK](https://openjdk.java.net/install/)
     but any other JDK will do. Java 8 or above is recommended.
 
 That's all!
@@ -34,7 +34,7 @@ Alternatively you can just download and extract the latest release form the [Rel
 ## Import the project to your IDE.
 
 It is highly recommended to use IntelliJ IDEA for this project. You can get the free community
-version from [this page](https://www.jetbrains.com/idea/download/#section=mac). You don't need
+version from [this page](https://www.jetbrains.com/idea/download/). You don't need
 to buy the Ultimate version, the Community Edition is perfectly fine.
 
 Importing the project is pretty simple. When IDEA is started you need to
@@ -73,7 +73,7 @@ Running this command will create an artifact in the `build/libs` directory which
 class so you can run your project right away by typing this command:
 
 ```bash
-java -jar build/libs/zircon.skeleton.kotlin-1.0.1.jar
+java -jar build/libs/zircon.skeleton.kotlin-1.2.0.jar
 ```
 
 You'll be presented by a new window with a greeting:

@@ -29,6 +29,8 @@ dependencies {
     implementation("org.hexworks.zircon:zircon.core-jvm:$zircon_version")
     implementation("org.hexworks.zircon:zircon.jvm.swing:$zircon_version")
 
+    implementation(kotlin("stdlib-jdk8"))
+
     testImplementation("junit:junit:$junit_version")
     testImplementation("org.mockito:mockito-all:$mockito_version")
     testImplementation("org.assertj:assertj-core:$assertj_version")
