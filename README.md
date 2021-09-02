@@ -73,7 +73,7 @@ Running this command will create an artifact in the `build/libs` directory which
 class so you can run your project right away by typing this command:
 
 ```bash
-java -jar build/libs/zircon.skeleton.kotlin-1.2.0.jar
+java -jar build/libs/zircon.skeleton.kotlin-1.2.0-all.jar
 ```
 
 You'll be presented by a new window with a greeting:
