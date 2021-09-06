@@ -24,7 +24,6 @@ java {
 
 dependencies {
     implementation("org.slf4j:slf4j-api:$slf4j_version")
-    implementation("org.slf4j:slf4j-simple:$slf4j_version")
 
     implementation("org.hexworks.zircon:zircon.core-jvm:$zircon_version")
     implementation("org.hexworks.zircon:zircon.jvm.swing:$zircon_version")
@@ -58,4 +57,5 @@ val jar by tasks.getting(Jar::class) {
     }
 }
 
-
+val compileKotlin: org.jetbrains.kotlin.gradle.tasks.KotlinCompile by tasks
+compileKotlin.kotlinOptions.jvmTarget = JavaVersion.VERSION_1_8.toString()
